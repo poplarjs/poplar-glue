@@ -17,7 +17,7 @@ Magic glue that makes poplar compoments work together
 ```javascript
 var glue = require('poplar-glue').init();
 
-var apiV1 = glue.createFromApiBuilders('v1*');
+var apiV1 = glue.createFromApiBuilders('v1/*');
 ```
 
 ### LICENSE

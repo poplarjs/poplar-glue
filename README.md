@@ -1,6 +1,11 @@
 Poplar Glue
 ===========
 
+[![Build Status](https://travis-ci.org/poplarjs/poplar-glue.svg?branch=master)](https://travis-ci.org/poplarjs/poplar-glue)
+[![Code Climate](https://codeclimate.com/github/poplarjs/poplar-glue/badges/gpa.svg)](https://codeclimate.com/github/poplarjs/poplar-glue)
+[![npm version](https://badge.fury.io/js/poplar-glue.svg)](http://badge.fury.io/js/poplar-glue)
+[![Inline docs](http://inch-ci.org/github/poplarjs/poplar-glue.svg?branch=master)](http://inch-ci.org/github/poplarjs/poplar-glue)
+
 Magic glue that makes poplar compoments work together
 
 ### Loading Process
@@ -18,6 +23,17 @@ Magic glue that makes poplar compoments work together
 var glue = require('poplar-glue').init();
 
 var apiV1 = glue.createFromApiBuilders('v1/*');
+```
+
+### Pre-loaded compoments
+
+``` javascript
+var controllers = poplar.get('controllers');
+var entities = poplar.get('entities');
+var middlewares = poplar.get('middlewares');
+var commons = poplar.get('commons');
+var env = poplar.get('env');
+var config = poplar.get('config');
 ```
 
 ### LICENSE

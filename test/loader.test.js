@@ -13,11 +13,11 @@ describe('loader', function() {
     expect(result).to.have.property('entities');
     expect(result).to.have.property('middlewares');
     expect(result).to.have.deep.property('controllers.v1');
-    expect(result).to.have.deep.property('controllers.v1.UsersApi');
-    expect(result).to.have.deep.property('controllers.v1.RolesApi');
+    expect(result).to.have.deep.property('controllers.v1.usersApi');
+    expect(result).to.have.deep.property('controllers.v1.rolesApi');
     expect(result).to.have.deep.property('entities.v1');
-    expect(result).to.have.deep.property('entities.v1.UserEntity');
-    expect(result).to.have.deep.property('entities.v1.RoleEntity');
-    expect(result).to.have.deep.property('middlewares.Authentication');
+    expect(result).to.have.deep.property('entities.v1.userEntity');
+    expect(result).to.have.deep.property('entities.v1.roleEntity');
+    expect(result).to.have.deep.property('middlewares.authentication');
   });
 });

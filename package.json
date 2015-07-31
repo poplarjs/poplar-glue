@@ -1,6 +1,6 @@
 {
   "name": "poplar-glue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Magic glue that makes poplar compoments work together",
   "main": "index.js",
   "scripts": {

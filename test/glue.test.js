@@ -26,6 +26,22 @@ describe('glue', function() {
     expect(poplar.get('myLoaders')).to.have.property('initializers');
   });
 
+  it('should have loggers', function() {
+    expect(poplar.get('logger')).to.have.property('access');
+    expect(poplar.get('logger')).to.have.property('error');
+  });
+
+  it('should have envs', function() {
+    expect(poplar.get('env')).to.have.property('NODE_ENV', 'development');
+    expect(poplar.get('env')).to.have.property('isDevelopment');
+    expect(poplar.get('env')).to.have.property('isProduction');
+    expect(poplar.get('env')).to.have.property('isTest');
+  });
+
+  it('should have config', function() {
+    expect(poplar.get('config')).to.have.property('sample', true);
+  });
+
   it('shoule be poplar instances', function() {
     expect(SampleApp.apiV1).to.be.instanceOf(poplar);
   });

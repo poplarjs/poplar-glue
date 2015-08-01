@@ -15,6 +15,7 @@ describe('glue', function() {
   it('should have specific functions', function() {
     expect(glue).to.respondTo('init');
     expect(glue).to.respondTo('createFromApiBuilders');
+    expect(glue).to.respondTo('loadApiBuilders');
   });
 
   it('should load autoload paths', function() {

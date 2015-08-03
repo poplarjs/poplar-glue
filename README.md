@@ -13,9 +13,9 @@ Magic glue that makes poplar compoments work together
 1. Load `config/environments/*.js` and creating environment specific helpers
 2. Load `config/config.js` file
 3. Load `config/initializers/*.js`
-4. Load `middlewares/*.js` into `poplar.get('middlewares')`
-4. Load `api/controllers/*.js` into `poplar.get('controllers')`
-4. Load `api/entities/*.js` into `poplar.get('entities')`
+4. Load `api/middlewares/*.js` into `poplar.get('middlewares')`
+5. Load `api/entities/*.js` into `poplar.get('entities')`
+6. Load `api/controllers/*.js` into `poplar.get('controllers')`
 
 ### Magic method for create Poplar instance
 

@@ -48,7 +48,7 @@ describe('glue', function() {
   });
 
   it('shoule be ApiBuilder instances', function() {
-    expect(SampleApp.apiV1._apiBuilders['users']).to.be.instanceOf(ApiBuilder);
-    expect(SampleApp.apiV1._apiBuilders['roles']).to.be.instanceOf(ApiBuilder);
+    expect(SampleApp.apiV1._apiBuilders.users).to.be.instanceOf(ApiBuilder);
+    expect(SampleApp.apiV1._apiBuilders.roles).to.be.instanceOf(ApiBuilder);
   });
 });

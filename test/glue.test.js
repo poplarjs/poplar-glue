@@ -41,6 +41,7 @@ describe('glue', function() {
 
   it('should have config', function() {
     expect(poplar.get('config')).to.have.property('sample', true);
+    expect(poplar.get('config')).to.have.property('database').eql({});
   });
 
   it('shoule be poplar instances', function() {

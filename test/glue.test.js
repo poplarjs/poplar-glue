@@ -30,6 +30,8 @@ describe('glue', function() {
   it('should have loggers', function() {
     expect(poplar.get('logger')).to.have.property('access');
     expect(poplar.get('logger')).to.have.property('error');
+    expect(poplar.get('logger')).to.have.property('debug').to.be.a('function');
+    expect(poplar.get('logger').debug()).to.be.a('function');
   });
 
   it('should have envs', function() {

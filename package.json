@@ -22,7 +22,7 @@
   "homepage": "https://github.com/poplarjs/poplar-glue#readme",
   "dependencies": {
     "debug": "^2.2.0",
-    "glob": "^5.0.14",
+    "glob": "^5.0.15",
     "minimatch": "^2.0.10"
   },
   "devDependencies": {
